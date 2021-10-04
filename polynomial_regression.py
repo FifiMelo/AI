@@ -14,7 +14,8 @@ class Polynomial:
 
     def regrression(value, output):
         pass
-        
+
+
 my_polynomial = Polynomial(3)
 
 print(my_polynomial.factors)
