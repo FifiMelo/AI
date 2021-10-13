@@ -64,14 +64,10 @@ class NN:
 
 
 
-    def give_answer(self, input):
+    def give_answer(self, input): 
         actual_computation = input
         for x in range(self.layers_number - 1):
-            print(actual_computation.shape)
-            print(self.weights[x].shape)
             actual_computation = np.dot(actual_computation, self.weights[x])
-            print(actual_computation)
-            print(self.biases[x])
             actual_computation = np.add(actual_computation, self.biases[x])
             actual_computation = vector_sigmoid(actual_computation)
         return(actual_computation)

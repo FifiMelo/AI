@@ -7,7 +7,7 @@ import pickle
 
 
 
-pkl_file = open('result2.pkl', 'rb')
+pkl_file = open('result1.pkl', 'rb')
 data1 = pickle.load(pkl_file)
 weights = data1["weights"]
 biases = data1["biases"]
@@ -19,7 +19,7 @@ myAI = AI.NN([784,20,20,10])
 
 myAI.weights = weights
 myAI.biases = biases
-print(len(biases[0]))
+print(len(biases[0][0]))
 scanner = data.Input()
 """
 
